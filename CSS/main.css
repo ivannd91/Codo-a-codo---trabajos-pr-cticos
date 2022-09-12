@@ -1,14 +1,22 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
     font-family: 'Pathway Gothic One', sans-serif;
 }
+
 h1 {
     text-align: center;
     padding:1ex;
 }
+h2 {
+    padding:1ex;
+    text-align:left;
+}
 
 header {
     background-color: black;
-    color: white
+    color: white;
+    width: 100%
 }
 nav {
     padding-top:20px;
@@ -17,7 +25,7 @@ nav {
     background-color:gray;
     color: white;
     text-decoration: none;
-    padding: 5px; 
+    padding: 5px;  
     border-radius: 5px;
     margin: 5px;
 }
@@ -31,13 +39,16 @@ footer {
     color: white;
     text-align: center;
     position: fixed;
+    margin-top: 0px;
     bottom: 0;
     width: 100%;
-    height: 40px;
+    /* height: 40px; */
+    padding: 0px
 }
 .imagenes {
-    width: 50em;
-    background-color: gray; 
+    margin: 10px;
+    width: 70%;
+    max-width : 400px
     
 }
 menu {
@@ -51,3 +62,104 @@ iframe {
     text-align: center
 
     }
+    .redes a {
+    text-decoration: none;
+    font-size: 1.5ex;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    /* text-align: center; */
+    background: whitesmoke;
+    color:  black;
+    border-radius: 50%;
+    margin: 3px;
+    }
+    .redes a:hover {
+        transform: scale(1.2);
+        color:  rgba(100%, 0%,0%, 0.8);
+    }
+
+    .formulario {
+        background-color: rgb(201, 196, 196);
+        padding: 5px;
+        margin: 2%  10%;
+        border-radius: 10px;
+        padding: 5px;
+        overflow:hidden;
+        font-size: 2vw;       
+    }
+    fieldset {
+        padding: 1%;
+        border-radius: 4px;
+        margin: 1%;
+     }
+    label, input {
+        font-size: 2vw;
+    }
+    input[type=text],input[type=date],
+    select{
+        width:70%;
+        padding: 1vw;
+        margin: 1vw;
+        display: inline-block;
+        border: 1vw;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+input[type=submit]{
+    background-color: green;
+    color: white;
+    border-radius:10px;
+    padding: 1vw;
+    cursor: pointer;
+    width:100%;
+    margin: 2px 0px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(4, 75, 4);
+    transform: scale(1.02);
+}
+input[type=reset]{
+    background-color:lightcoral;
+    color: white;
+    border-radius:10px;
+    padding: 1vw;
+    cursor: pointer;
+    width:100%;
+    margin: 2px 0px; 
+}
+input[type=reset]:hover {
+    background-color: rgb(176, 94, 94);
+    transform: scale(1.02);
+}
+textarea {
+    width: 97%;
+    height: 6em;
+    border-radius: 5px;
+    /* max-width: 100%; */
+    overflow: auto;
+    resize: vertical;
+    font-size: 1em;
+    padding: 1%;
+    /* margin-right: 5%; */
+    margin-left:0%;
+}
+    .clientes {
+        width: 30%;
+        /* height: 25%; */
+        max-width: 500px;
+        margin: 2px;
+        border: 3px solid;
+    }
+    table{
+        text-align: center;
+        border:1px solid 
+    }
+    td{
+        border:1px solid 
+    }
+    th{
+        border: 1px solid
+    } 
